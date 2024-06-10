@@ -1,45 +1,39 @@
-<header class="bg-base-100 text-base-content p-2 shadow-md">
-  <div class="container mx-auto flex justify-between items-start">
+<div class="flex">
+  <!-- Fixed sidebar -->
+  <div class="fixed inset-y-0 left-0 max-w-28 max-h-64">
     <div class="flex items-center">
-      <img src="/assets/Logo.png" alt="Logo" routerLink="/intro" class="h-12 mr-3 cursor-pointer"/>
+      <img
+        src="/assets/Logo.png"
+        alt="Logo"
+        routerLink="/intro"
+        class="h-12 mx-6 my-4 cursor-pointer"
+      />
     </div>
-    <nav>
-      <ul class="flex space-x-4">
-        <li>
-          <a
-            routerLink="/intro"
-            routerLinkActive="active"
-            class="btn btn-ghost hover:bg-gray-200"
-            >Intro</a
-          >
-        </li>
-        <li>
-          <a
-            routerLink="/work"
-            routerLinkActive="active"
-            class="btn btn-ghost hover:bg-gray-200"
-            >Work</a
-          >
-        </li>
-        <li>
-          <a
-            routerLink="/about"
-            routerLinkActive="active"
-            class="btn btn-ghost hover:bg-gray-200"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            routerLink="/contact"
-            routerLinkActive="active"
-            class="btn btn-ghost hover:bg-gray-200"
-            >Contact</a
-          >
-        </li>
-      </ul>
+    <nav class="flex-1 px-4 py-4 space-y-1">
+      <a
+        routerLink="/intro"
+        routerLinkActive="active"
+        class="block px-2 py-2 text-sm font-medium rounded-md hover:bg-secondary"
+        >Home</a
+      >
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+        class="block px-2 py-2 text-sm font-medium rounded-md hover:bg-secondary"
+        >About</a
+      >
+      <a
+        routerLink="/work"
+        routerLinkActive="active"
+        class="block px-2 py-2 text-sm font-medium rounded-md hover:bg-secondary"
+        >Work</a
+      >
+      <a
+        routerLink="/contact"
+        routerLinkActive="active"
+        class="block px-2 py-2 text-sm font-medium rounded-md hover:bg-secondary"
+        >Contact</a
+      >
     </nav>
   </div>
-</header>
-
-
+</div>

@@ -1,109 +1,136 @@
-<div class="">
-  <!-- Hero Section -->
-  <section>
-    <div class="hero-content flex-col lg:flex-row-reverse">
-      <img
-        src="/assets/IMG_8922 2.jpg"
-        class="mask mask-squircle shadow-2xl max-w-96"
-      />
-      <div>
-        <h1 class="text-5xl font-bold max-w-xl">
-          I’m Isabelle Gustafsson, a frontend developer & ux/ui designer based
-          in Sweden.
-        </h1>
-        <p class="py-4">I transform ideas into stunning digital realities.</p>
-        <button class="btn btn-primary m-0.5">Projects</button>
-        <button class="btn btn-outline btn-accent m-0.5">LinkedIn</button>
+<div class="flex justify-center">
+  <div class="w-full lg:max-w-6xl justify-center">
+    <!-- Hero Section -->
+    <section class="hero p-6 flex justify-center items-center">
+      <div class="flex flex-col lg:flex-row items-center lg:max-w-6xl">
+        <img
+          src="/assets/IMG_8922 2.jpg"
+          class="mask mask-squircle shadow-2xl max-w-full lg:max-w-96 lg:order-last"
+        />
+        <div class="lg:ml-4 text-center lg:text-left">
+          <!-- Text content -->
+          <h1 class="text-4xl lg:text-5xl font-bold">
+            I’m Isabelle Gustafsson, a frontend developer & ux/ui designer based
+            in Sweden.
+          </h1>
+          <p class="py-4">I transform ideas into stunning digital realities.</p>
+          <a
+            href="https://github.com/Bella0g"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="btn btn-primary m-0.5">Github</button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/isabelle-gustafsson-655614128/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="btn btn-outline btn-accent m-0.5">LinkedIn</button>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
- <!-- Projects Section -->
- <section class="container max-w-5xl mx-auto p-4 mb-40">
-  <h3 class="text-center font-bold text-4xl pb-8">Projects</h3>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
-    <a routerLink="/project/1" class="card shadow-lg p-4 bg-base-100 flex flex-col w-96">
-      <img
-        src="/assets/flower1.webp"
-        class="rounded-lg shadow-2xl mb-4 w-full max-h-80 object-cover"
-        alt="project building website for ducktape media"
-      />
-      <h2 class="card-title">Project 1</h2>
-      <p>Content for the first card.</p>
-    </a>
-    <a routerLink="/project/2" class="card shadow-lg p-4 bg-base-100 flex flex-col w-96">
-      <img
-        src="/assets/forest1.jpeg"
-        class="rounded-lg shadow-2xl mb-4 w-full max-h-80 object-cover"
-        alt="project building website for ducktape media"
-      />
-      <h2 class="card-title">Project 2</h2>
-      <p>Content for the second card.</p>
-    </a>
-    <a routerLink="/project/3" class="card shadow-lg p-4 bg-base-100 flex flex-col w-96">
-      <img
-        src="/assets/rain1.jpeg"
-        class="rounded-lg shadow-2xl mb-4 w-full max-h-80 object-cover"
-        alt="project building website for ducktape media"
-      />
-      <h2 class="card-title">Project 3</h2>
-      <p>Content for the third card.</p>
-    </a>
-    <a routerLink="/project/4" class="card shadow-lg p-4 bg-base-100 flex flex-col w-96">
-      <img
-        src="/assets/sunset1.jpeg"
-        class="rounded-lg shadow-2xl mb-4 w-full max-h-80 object-cover"
-        alt="project building website for ducktape media"
-      />
-      <h2 class="card-title">Project 4</h2>
-      <p>Content for the fourth card.</p>
-    </a>
+    <!-- Projects Section -->
+    <section class="container mx-auto p-4 mb-60">
+      <h3 class="text-center font-semibold text-4xl mb-8">Projects</h3>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8"
+      >
+        <!-- First card -->
+        <a routerLink="/project/1" class="card-container">
+          <div class="card shadow-md p-4 flex flex-col">
+            <img
+              src="/assets/flower1.webp"
+              class="rounded-lg shadow-sm mb-4 object-cover h-96"
+              alt="project building website for ducktape media"
+            />
+            <h2 class="card-title">Project 2</h2>
+            <p>Content for the second card.</p>
+          </div>
+        </a>
+        <!-- Second card -->
+        <a routerLink="/project/2" class="card-container">
+          <div class="card shadow-md p-4 flex flex-col">
+            <img
+              src="/assets/rain1.jpeg"
+              class="rounded-lg shadow-sm mb-4 object-cover h-96"
+              alt="project building website for ducktape media"
+            />
+            <h2 class="card-title">Project 2</h2>
+            <p>Content for the second card.</p>
+          </div>
+        </a>
+        <!-- Third card -->
+        <a routerLink="/project/3" class="card-container">
+          <div class="card shadow-md p-4 flex flex-col">
+            <img
+              src="/assets/sunset1.jpeg"
+              class="rounded-lg shadow-sm mb-4 object-cover h-96"
+              alt="project building website for ducktape media"
+            />
+            <h2 class="card-title">Project 3</h2>
+            <p>Content for the third card.</p>
+          </div>
+        </a>
+        <!-- Fourth card -->
+        <a routerLink="/project/4" class="card-container">
+          <div class="card shadow-md p-4 flex flex-col">
+            <img
+              src="/assets/forest1.jpeg"
+              class="rounded-lg shadow-sm mb-4 object-cover h-96"
+              alt="project building website for ducktape media"
+            />
+            <h2 class="card-title">Project 4</h2>
+            <p>Content for the fourth card.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto p-4 mb-60">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card bg-accent p-4 bg-opacity-40">
+          <h2 class="text-xl font-semibold">_Code</h2>
+          <ul>
+            <li>Angular</li>
+            <li>Tailwind</li>
+            <li>React</li>
+            <li>DaisyUI</li>
+            <li>Webflow</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="card bg-secondary p-4 bg-opacity-40">
+          <h2 class="text-xl font-semibold">_Design</h2>
+          <p>Wireframing and Prototyping:</p>
+          <ul>
+            <li>Figma</li>
+            <li>Balsamiq</li>
+            <li>Sketch</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="mb-60 bg-neutral p-4 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
+        <img
+          src="/assets/Humaaans Space.svg"
+          class="md:max-w-xs"
+          alt="Illustration of a person in space"
+        />
+        <div>
+          <h2 class="text-2xl font-bold">Contact</h2>
+          <p class="py-6">Provident cupiditate voluptatem et in...</p>
+          <button routerLink="/contact" class="btn btn-primary">
+            Say hello!
+          </button>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
-
-  <!-- Skills and Interests Section -->
-  <section class="container mx-auto p-4 mb-40">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="card bg-accent p-4 bg-opacity-40">
-        <h2 class="text-xl font-semibold">_Code</h2>
-        <ul>
-          <li>Angular</li>
-          <li>Tailwind</li>
-          <li>React</li>
-          <li>DaisyUI</li>
-          <li>Webflow</li>
-          <li>C#</li>
-        </ul>
-      </div>
-      <div class="card bg-secondary p-4 bg-opacity-40">
-        <h2 class="text-xl font-semibold">_Design</h2>
-        <p>Wireframing and Prototyping:</p>
-        <ul>
-          <li>Figma</li>
-          <li>Balsamiq</li>
-          <li>Sketch</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-   <!-- Contact Section -->
-   <section class="card bg-neutral mb-40">
-    <div class="hero-content flex-col lg:flex-row lg:space-x-10">
-      <img
-        src="/assets/Humaaans Space.svg"
-        class="max-w-sm rounded-lg mb-8 lg:mb-0"
-      />
-      <div>
-        <h1 class="text-2xl font-bold">Contact</h1>
-        <p class="py-6 w-96">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-          id nisi.
-        </p>
-        <button class="btn btn-primary">Say hello!</button>
-      </div>
-    </div>
-  </section>
 </div>
-
