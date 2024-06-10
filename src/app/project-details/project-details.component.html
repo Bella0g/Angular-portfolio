@@ -1,0 +1,87 @@
+<div>
+  <!-- Centered Image and Text Section -->
+  <section class="container mx-auto p-4 my-4 h-screen">
+    <div class="flex flex-col items-center mx-auto max-w-4xl">
+      <img
+        src="assets/project{{ projectId }}-image.jpg"
+        alt="Sample Image"
+        class="rounded-lg shadow-xl mb-4 w-full"
+      />
+      <div class="flex flex-col md:flex-row md:justify-between w-full">
+        <h2 class="text-xl font-semibold md:w-1/2 md:pr-4">Title Here</h2>
+        <p class="md:w-1/2 md:pl-4">
+          This is a paragraph that goes to the right of the h2 element. It can
+          contain more text and will align properly next to the h2 element on
+          medium and larger screens.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grid with One Image on Top and Two Below -->
+  <section class="container mx-auto p-4 mt-10 mb-10 max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="col-span-1 md:col-span-2">
+        <img
+        src="assets/project{{ projectId }}-image.jpg"
+          alt="Top Image"
+          class="rounded-lg shadow-2xl w-full"
+        />
+      </div>
+      <div>
+        <img
+        src="assets/project{{ projectId }}-image.jpg"
+          alt="Bottom Left Image"
+          class="rounded-lg shadow-2xl w-full"
+        />
+      </div>
+      <div>
+        <img
+        src="assets/project{{ projectId }}-image.jpg"
+          alt="Bottom Right Image"
+          class="rounded-lg shadow-2xl w-full"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- More Projects Section -->
+  <section class="container mx-auto p-4 mt-10 mb-10 max-w-6xl">
+    <h2 class="text-2xl font-bold mb-6 text-center">More projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <a
+        href="#project1"
+        class="card hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Project 1"
+          class="rounded-lg w-full"
+        />
+        <h3 class="text-xl font-semibold mt-4 p-2 text-center">Project 1</h3>
+      </a>
+      <a
+        href="#project2"
+        class="card hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Project 2"
+          class="rounded-lg w-full"
+        />
+        <h3 class="text-xl font-semibold mt-4 p-2 text-center">Project 2</h3>
+      </a>
+      <a
+        href="#project3"
+        class="card hover:shadow-xl transition-shadow duration-300"
+      >
+        <img
+          src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Project 3"
+          class="rounded-lg w-full"
+        />
+        <h3 class="text-xl font-semibold mt-4 p-2 text-center">Project 3</h3>
+      </a>
+    </div>
+  </section>
+</div>
