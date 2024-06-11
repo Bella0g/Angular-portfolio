@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-    @apply bg-secondary/85; /* active color of nav links */
-  }
+.underline-animation {
+  @apply relative;
+}
+
+.underline-animation::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-full h-0.5 bg-primary transition-all duration-300;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.underline-animation:hover::after,
+.underline-animation.active::after {
+  transform: scaleX(1);
+}
