@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { projectData } from '../project-data';
 
 @Component({
   selector: 'app-intro',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class IntroComponent {
   
-
+  projectData = projectData;
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { projectData } from '../project-data';
 
 @Component({
   selector: 'app-work',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './work.component.css'
 })
 export class WorkComponent {
+
+  projectData = projectData;
 
 }

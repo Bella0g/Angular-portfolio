@@ -60,62 +60,30 @@
       <button class="btn btn-outline btn-secondary rounded-lg my-4">Find out more</button>
     </section>
 
-    <!-- Projects Section -->
-    <section class="container mx-auto p-4 mb-20">
-      <h3 class="text-center font-semibold text-4xl mb-8">Projects</h3>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8"
-      >
-        <!-- First card -->
-        <a routerLink="/project/1" class="card-container">
-          <div class="card shadow-md p-4 flex flex-col">
-            <img
-              src="/assets/flower1.webp"
-              class="rounded-lg shadow-sm mb-4 object-cover h-96"
-              alt="project building website for ducktape media"
-            />
-            <h2 class="card-title">Chat app</h2>
-            <p>Content for the second card.</p>
-          </div>
-        </a>
-        <!-- Second card -->
-        <a routerLink="/project/2" class="card-container">
-          <div class="card shadow-md p-4 flex flex-col">
-            <img
-              src="/assets/rain1.jpeg"
-              class="rounded-lg shadow-sm mb-4 object-cover h-96"
-              alt="project building website for ducktape media"
-            />
-            <h2 class="card-title">Ducktape Ui design and Webflow</h2>
-            <p>Content for the second card.</p>
-          </div>
-        </a>
-        <!-- Third card -->
-        <a routerLink="/project/3" class="card-container">
-          <div class="card shadow-md p-4 flex flex-col">
-            <img
-              src="/assets/sunset1.jpeg"
-              class="rounded-lg shadow-sm mb-4 object-cover h-96"
-              alt="project building website for ducktape media"
-            />
-            <h2 class="card-title">Flight booking app design</h2>
-            <p>Content for the third card.</p>
-          </div>
-        </a>
-        <!-- Fourth card -->
-        <a routerLink="/project/4" class="card-container">
-          <div class="card shadow-md p-4 flex flex-col">
-            <img
-              src="/assets/forest1.jpeg"
-              class="rounded-lg shadow-sm mb-4 object-cover h-96"
-              alt="project building website for ducktape media"
-            />
-            <h2 class="card-title">Flight booking app React native? / angular tailwind portfolio</h2>
-            <p>Content for the fourth card.</p>
-          </div>
-        </a>
-      </div>
-    </section>
+   <!-- Projects Section -->
+<section class="container mx-auto p-4 mb-20">
+  <h3 class="text-center font-semibold text-4xl mb-8">Projects</h3>
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-row-4 gap-4 lg:gap-8">
+    <a
+      *ngFor="let project of projectData"
+      [routerLink]="['/project', project.id]"
+      [queryParams]="{
+        title: project.title,
+        description: project.description,
+        images: project.images
+      }"
+      class="card shadow-md p-4 flex flex-col"
+    >
+      <img
+        [src]="project.images[0]"
+        class="rounded-lg shadow-sm mb-4 object-cover h-96"
+        [alt]="project.title"
+      />
+      <h2 class="card-title">{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+    </a>
+  </div>
+</section>
 
     <!-- Contact Section -->
     <section class="mb-60 bg-primary p-4 mx-4 rounded-xl text-slate-50">

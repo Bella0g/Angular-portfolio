@@ -1,48 +1,32 @@
-<div class="flex flex-col items-center pt-20 mx-4 lg:max-w-6xl space-y-10">
+<div class="flex flex-col items-center justify-center text-center py-20 mx-4 lg:max-w-6xl space-y-10 w-full">
   <h1 class="text-5xl font-semibold text-center mb-10 text-primary">My work</h1>
 
-  <div class="card lg:card-side w-full">
-    <figure><img src="/assets/rain1.jpeg" alt="Project 1" class="max-w-96 max-h-96" /></figure>
-    <div class="card-body">
-      <h2 class="card-title text-primary">Project 1</h2>
-      <p class="text-base-content">Description of Project 1.</p>
-      <div class="card-actions justify-end">
-        <button routerLink="/project/1" class="btn btn-primary">View Details</button>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
+    <div class="card lg:card-side bg-base-100 shadow-xl" *ngFor="let project of projectData">
+      <figure class="w-full lg:w-1/2">
+        <img
+          [src]="project.images[0]"
+          [alt]="project.title"
+          class="w-full h-80 object-cover"
+        />
+      </figure>
+      <div class="card-body w-full lg:w-1/2">
+        <h2 class="card-title text-primary">{{ project.title }}</h2>
+        <p class="text-base-content">{{ project.description }}</p>
+        <div class="card-actions justify-end">
+          <button
+            [routerLink]="['/project', project.id]"
+            [queryParams]="{
+              title: project.title,
+              description: project.description,
+              images: project.images
+            }"
+            class="btn btn-primary"
+          >
+            View Details
+          </button>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="card lg:card-side w-full">
-    <figure><img src="/assets/rain1.jpeg" alt="Project 2" class="max-w-96 max-h-96" /></figure>
-    <div class="card-body">
-      <h2 class="card-title text-primary">Project 2</h2>
-      <p class="text-base-content">Description of Project 2.</p>
-      <div class="card-actions justify-end">
-        <button routerLink="/project/2" class="btn btn-primary">View Details</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card lg:card-side w-full">
-    <figure><img src="/assets/rain1.jpeg" alt="Project 3" class="max-w-96 max-h-96" /></figure>
-    <div class="card-body">
-      <h2 class="card-title text-primary">Project 3</h2>
-      <p class="text-base-content">Description of Project 3.</p>
-      <div class="card-actions justify-end">
-        <button routerLink="/project/3" class="btn btn-primary">View Details</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="card lg:card-side w-full">
-    <figure><img src="/assets/rain1.jpeg" alt="Project 4" class="max-w-96 max-h-96" /></figure>
-    <div class="card-body">
-      <h2 class="card-title text-primary">Project 4</h2>
-      <p class="text-base-content">Description of Project 4.</p>
-      <div class="card-actions justify-end">
-        <button routerLink="/project/4" class="btn btn-primary">View Details</button>
-      </div>
-    </div>
-  </div>
-
 </div>
