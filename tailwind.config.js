@@ -5,6 +5,6 @@ export const theme = {
   extend: {},
 };
 export const daisyui = {
-  themes: ["light", "dark", "nord"],
+  themes: ["light", "dark"],
 };
 export const plugins = [require("daisyui")];

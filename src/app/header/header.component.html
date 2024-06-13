@@ -1,39 +1,40 @@
-<div class="flex">
-  <!-- Fixed sidebar -->
-  <div class="fixed inset-y-0 left-0 max-w-28 max-h-64">
+<header
+  class="fixed top-0 left-0 right-0 z-50"
+>
+  <div class="mx-2 my-2 px-4 py-2 shadow-md rounded-lg bg-base-100 flex items-center justify-between">
     <div class="flex items-center">
       <img
         src="/assets/Logo.png"
         alt="Logo"
         routerLink="/intro"
-        class="h-12 mx-6 my-4 cursor-pointer"
+        class="h-8 cursor-pointer"
       />
     </div>
-    <nav class="flex-1 mx-4 my-4 space-y-2">
+    <nav class="flex space-x-4">
       <a
         routerLink="/intro"
         routerLinkActive="active underline-animation"
-        class="relative mx-2 py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        class="relative py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >Home</a
       >
       <a
         routerLink="/about"
         routerLinkActive="active underline-animation"
-        class="relative mx-2 py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        class="relative py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >About</a
       >
       <a
         routerLink="/work"
         routerLinkActive="active underline-animation"
-        class="relative mx-2 py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        class="relative py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >Work</a
       >
       <a
         routerLink="/contact"
         routerLinkActive="active underline-animation"
-        class="relative mx-2 py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+        class="relative py-1 text-sm font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-accent after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
         >Contact</a
       >
     </nav>
   </div>
-</div>
+</header>
